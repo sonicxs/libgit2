@@ -98,4 +98,4 @@ list(APPEND SRC_ZLIB
 
 list(SORT SRC_ZLIB)
 include_directories("${chromium_zlib_src_SOURCE_DIR}")
-add_library(chromium_zlib OBJECT ${SRC_ZLIB})
+add_library(chromium_zlib STATIC ${SRC_ZLIB})

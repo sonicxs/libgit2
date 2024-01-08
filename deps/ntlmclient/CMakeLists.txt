@@ -36,4 +36,4 @@ else()
 	message(FATAL_ERROR "Unable to use libgit2's HTTPS backend (${USE_HTTPS}) for NTLM crypto")
 endif()
 
-add_library(ntlmclient OBJECT ${SRC_NTLMCLIENT} ${SRC_NTLMCLIENT_UNICODE} ${SRC_NTLMCLIENT_CRYPTO})
+add_library(ntlmclient STATIC ${SRC_NTLMCLIENT} ${SRC_NTLMCLIENT_UNICODE} ${SRC_NTLMCLIENT_CRYPTO})

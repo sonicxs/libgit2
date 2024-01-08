@@ -135,6 +135,6 @@ set(targets)
 # Libraries
 # pcre
 include_directories(${PROJECT_BINARY_DIR}/src/pcre)
-add_library(pcre OBJECT ${PCRE_HEADERS} ${PCRE_SOURCES} ${PCREPOSIX_SOURCES})
+add_library(pcre STATIC ${PCRE_HEADERS} ${PCRE_SOURCES} ${PCREPOSIX_SOURCES})
 
 # end CMakeLists.txt

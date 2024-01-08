@@ -2,7 +2,7 @@
 file(GLOB SRC_XDIFF "*.c" "*.h")
 list(SORT SRC_XDIFF)
 
-add_library(xdiff OBJECT ${SRC_XDIFF})
+add_library(xdiff STATIC ${SRC_XDIFF})
 target_include_directories(xdiff SYSTEM PRIVATE
 	"${PROJECT_SOURCE_DIR}/include"
 	"${PROJECT_SOURCE_DIR}/src/util"
